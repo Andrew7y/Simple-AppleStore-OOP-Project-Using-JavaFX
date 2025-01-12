@@ -1,0 +1,35 @@
+.search-box{
+    -fx-background-color:FFFFFF;
+    -fx-background-radius: 10;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.butonSearch{
+    -fx-background-color: #D6DBDF;
+    -fx-background-radius: 10;
+}
+.right_Bar{
+    -fx-background-color : #eeeeee;
+
+}
+.butonComboBox{
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 10;
+
+}
+.chosenProduct{
+    -fx-background-color: #fafafa;
+    -fx-background-radius: 25;
+}
+.butonProduct{
+    -fx-background-color: #0288d1;
+    -fx-background-radius: 10;
+}
+.TopViews{
+    -fx-background-color: #F5F6F1;
+}
+.productBGStyle{
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 15;
+}

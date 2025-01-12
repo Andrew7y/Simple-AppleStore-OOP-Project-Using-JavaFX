@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.AppleStore">
+   <children>
+      <BorderPane layoutX="14.0" prefHeight="600.0" prefWidth="896.0" styleClass="TopViews" stylesheets="@../Values/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="322.0" styleClass="right_Bar" stylesheets="@../Values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="61.0" prefWidth="310.0">
+                     <children>
+                        <Label prefHeight="44.0" prefWidth="104.0" text="Apple">
+                           <font>
+                              <Font name="Cambria Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" graphicTextGap="5.0" prefHeight="44.0" prefWidth="98.0" text="Store">
+                           <font>
+                              <Font name="Cambria Bold" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="262.0" styleClass="search-box" stylesheets="@../Values/style.css">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="searchText" prefHeight="28.0" prefWidth="196.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../Values/style.css">
+                           <font>
+                              <Font name="Constantia" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="searchButton" contentDisplay="BOTTOM" ellipsisString="" mnemonicParsing="false" onAction="#searchProduct" prefHeight="22.0" prefWidth="56.0" styleClass="butonSearch" stylesheets="@../Values/style.css" text="Search" />
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="9.0" prefWidth="315.0" VBox.vgrow="ALWAYS" />
+                  <VBox fx:id="chosenProductCard" alignment="TOP_CENTER" prefHeight="464.0" prefWidth="254.0" styleClass="chosenProduct" stylesheets="@../Values/style.css">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <Pane prefHeight="9.0" prefWidth="254.0" />
+                        <ImageView fitHeight="30.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/applelogo.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="79.0" prefWidth="254.0">
+                           <children>
+                              <Label fx:id="ProductNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="235.0" text="iPhone14 Pro">
+                                 <font>
+                                    <Font name="Arial Black" size="19.0" />
+                                 </font>
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fx:id="ProductImageLabel" fitHeight="161.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Iphone14Pro.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets right="2.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="82.0" prefWidth="250.0">
+                           <children>
+                              <Label fx:id="ProductPriceLabel" contentDisplay="CENTER" prefHeight="39.0" prefWidth="153.0" text="\$590.5">
+                                 <font>
+                                    <Font name="Calibri" size="19.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <ComboBox fx:id="comboBox" prefHeight="30.0" prefWidth="61.0" styleClass="butonComboBox" stylesheets="@../Values/style.css"  />
+                           </children>
+                        </HBox>
+                        <Button fx:id="AddToBag" mnemonicParsing="false" onAction="#setCart" prefHeight="32.0" prefWidth="88.0" styleClass="butonProduct" stylesheets="@../Values/style.css" text="Add to Bag" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="38.0" prefWidth="315.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="757.0" styleClass="TopViews" stylesheets="@../Values/style.css">
+                     <children>
+                        <HBox prefHeight="82.0" prefWidth="10.0" />
+                        <Label contentDisplay="CENTER" prefHeight="44.0" prefWidth="126.0" text="  Language : English">
+                           <font>
+                              <Font name="Calibri Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="54.0" prefWidth="369.0" />
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="215.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="44.0" prefWidth="71.0" text="Account">
+                                 <font>
+                                    <Font name="Calibri Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="ShoppingBag" fitHeight="25.0" fitWidth="35.0" onMousePressed="#SwitchToBag" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/shopping-bag.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="714.0" prefWidth="803.0" styleClass="TopViews" stylesheets="@../Values/style.css" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="763.0" prefWidth="855.0" styleClass="TopViews" stylesheets="@../Values/style.css">
+                           <content>
+                              <GridPane fx:id="gridPane" prefHeight="257.0" prefWidth="501.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
