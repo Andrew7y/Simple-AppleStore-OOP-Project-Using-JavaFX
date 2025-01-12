@@ -21,7 +21,7 @@ This program is perfect for learning basic inventory management and price calcul
 
 ---
 ## Demo and Report Document
- To see report document : [Click here](report/รายงาน Simple Apple Store Project.pdf)
+ To see report document : [Click here](report/รายงาน%20Simple%20Apple%20Store%20Project.pdf)
 #### Demo app 
 ![Project Demo](report/demo.gif)
 
