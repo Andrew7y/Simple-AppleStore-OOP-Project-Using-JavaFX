@@ -1,7 +1,4 @@
-# Simple Apple Store 
-
-> Simple Apple Store is a basic inventory management application that allows users to browse a list of products, select the quantity of each product, and calculate the total price based on selected items.
-
+# Simple Apple Store Project
 ## Overview
 
 **Simple Apple Store** is an application that allows users to:
@@ -23,6 +20,10 @@ This program is perfect for learning basic inventory management and price calcul
 
 
 ---
+## Demo and Report Document
+ To see report document : [Click here](report/รายงาน Simple Apple Store Project.pdf)
+#### Demo app 
+![Project Demo](report/demo.gif)
 
 ## Getting Started
 
