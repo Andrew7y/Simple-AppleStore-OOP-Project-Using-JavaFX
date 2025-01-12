@@ -40,7 +40,7 @@ Follow these steps to set up the project locally:
 git clone https://github.com/Andrew7y/Simple-AppleStore-OOP-Project-Using-JavaFX.git
 ```
 ### Open and run project
-open the source-code folder in your favorite IDE and run the main class `Main.java` located in the `/src/main/java/Main` directory.
+open the `source-code` folder in your favorite IDE and run the main class `Main.java` located in the `/src/main/java/Main` directory.
 
 ### Repository Structure
 ```
